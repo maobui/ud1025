@@ -31,6 +31,10 @@
                                 <rect key="frame" x="16" y="110.5" width="343" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="displayLyrics:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="E0B-cj-Zwd"/>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="fkU-NT-PQx"/>
+                                </connections>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mrx-ik-Y7b">
                                 <rect key="frame" x="67.5" y="165.5" width="240" height="128"/>
@@ -61,6 +65,10 @@
                             <constraint firstItem="k2G-7y-DZj" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="zat-3X-Xlu"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lyricsView" destination="mrx-ik-Y7b" id="igD-H1-j9J"/>
+                        <outlet property="nameField" destination="k2G-7y-DZj" id="79F-YH-yIj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
